@@ -79,9 +79,16 @@ namespace CalculatorApp
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Adding 3 to 5");
             Console.WriteLine(Solution.Run("adding", 3, 5));
+            Console.WriteLine("");
+            Console.WriteLine("Subtracting 2 from 10");
             Console.WriteLine(Solution.Run("subtracting", 10, 2));
+            Console.WriteLine("");
+            Console.WriteLine("Mulipying 4 by 2");
             Console.WriteLine(Solution.Run("multiplying", 4, 2));
+            Console.WriteLine("");
+            Console.WriteLine("Dividing 20 by 2");
             Console.WriteLine(Solution.Run("dividing", 20, 2));
             //Pause
             Console.ReadLine();
