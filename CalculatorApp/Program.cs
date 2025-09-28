@@ -9,7 +9,7 @@ namespace CalculatorApp
         {
             int Adding(int x, int y);
             int Subtracting(int x, int y);
-            int Multiplying(int x, int y);
+            long Multiplying(int x, int y);
             int Dividing(int x, int y);
         }
 
@@ -26,9 +26,9 @@ namespace CalculatorApp
                 return x - y;
             }
 
-            public int Multiplying(int x, int y)
+            public long Multiplying(int x, int y)
             {
-                int result = 0;
+                long result = 0;
                 bool isNegative = false;
 
                 if (y < 0)
@@ -37,9 +37,9 @@ namespace CalculatorApp
                     isNegative = true;
                 }
 
-                for (int i = 0; i < y; i++)
+                for (long i = 0; i < y; i++)
                 {
-                    result += x;
+                    result += x; 
                 }
 
                 return isNegative ? -result : result;
